@@ -1,0 +1,26 @@
+///// Matlab code ///////////////
+a=[0:5]'
+
+////////////////// C Code ////////////////////
+#include <stdio.h>
+
+void main()
+{
+int   xhat[1][6]={0,1,2,3,4,5};
+int b[6][6];
+int transpose[6][1];
+int ktime=1;
+int i,j;
+for(i=0;i<1;i++)
+{
+    for(j=0;j< 6;j++)
+    transpose[j][i]=xhat[i][j];
+    
+}
+for(i=0;i<1;i++)
+{
+    for(j=0;j< 6;j++)
+    printf(" %d \n ",transpose[j][i]);
+    
+}
+}
