@@ -1,0 +1,39 @@
+////////////// MATLAB CODE ///////////////
+% Element-by-element multiplication involving two 1-D arrays or two matrices of the same dimension
+x = [2 3 5];
+y = [2 4 9];
+z = x.*y
+//////////////////// C code ///////////////////////
+#include <stdio.h>
+#include<conio.h>
+void main()
+{
+int   x[4],y[4],z[4];
+int i,j;
+printf("Enter  vector x =  ");
+for(i=1;i<4;i++)
+{
+    
+        scanf("%d", &x[i]);
+    
+}
+printf("Enter  vector y =  ");
+for(i=1;i<4;i++)
+{
+    
+        scanf("%d", &y[i]);
+    
+}
+printf(" z = ");
+for(i=1;i<4;i++)
+{
+    
+        z[i]=x[i]*y[i];
+        printf(" %d ",z[i]);
+    
+}
+
+    
+   
+
+}
